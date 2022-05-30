@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Salam, Mən Təxmin oyun botuyam Zamanınızı əyləncəli keçirmək üçün\nməni qrupuna əkavə et🤖*
+    *Salam, Mən təxmin oyun botuyam zamanınızı əyləncəli keçirmək üçün\nməni qrupuna əlavə et🤖*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
@@ -149,7 +149,7 @@ const OyunDurdurHusnuEhedov = (ctx, chatId) => {
 		}
 	}
 	else {
-		ctx.reply("🆘 Oyun başlamadı... 🙅🏻\nOyunu Başlat ➡️  /game")
+		ctx.reply("🆘 Oyun başlamadı... 🙅🏻\nOyunu başlat ➡️  /game")
 	}
 }
 const RaundMesajHusnuEhedov = (chatId, round, time) => {
@@ -168,7 +168,7 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 
 	return Degisken(`
 		*🔹 Raund ${round + 1}/${process.env.RAUND_SAYI}*
-		❓ Sizcə bu adamın neçə yaşı var
+		❓ Sizcə bu şəxsin neçə yaşı var
 		${answers.length > 0 ? 
 			`\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n`
 			:
@@ -230,7 +230,7 @@ const OyunHusnuEhedov = (ctx, chatId) => {
 			if (!top.every(member => member.answer === null)) {
 				ctx.replyWithMarkdown(
 					Degisken(`
-						✅ Şəkildəki şəxs: *${rightAnswer} ${HusnuEhedov(rightAnswer, "yaşında", "yaşında", "yaşında")}*\n*⭐️Xal Qalibləri:*
+						✅ Şəkildəki şəxs: *${rightAnswer} ${HusnuEhedov(rightAnswer, "yaşında", "yaşında", "yaşında")}*\n*⭐️Xal qalibləri:*
 
 						${top.sort((a, b) => b.addScore - a.addScore).map((member, index) => `${["🥇","🎖","🏅"][index] || "🔸"} ${index + 1}. *${member.firstName}*: ${ArtiEksi(member.addScore)}`).join("\n")}
 					`),
@@ -395,7 +395,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
         *Salam! "Təxmin" oyunu üçün\nyaradırmış bir botam🤖*\n🆘*Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️Qaydalar budur : Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️,Əvvəlcə botu qrupa əlavə edin və Qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra Əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
-          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _Oyunu Başlat_\n⛔️ /stop - _Oyunu dayandırmaq_\n📊 /top - _Oyuncuların puanı göstərir_\n_🌍 /g - Global Puanlar_\nℹ️ /help - _Sizə kömək edəcək_\n👤 /info - _İstifadəçi haqqında məlumat_\n🆔 /id - _Qrup infosu_`))
+          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _Oyunu Başlat_\n⛔️ /stop - _Oyunu dayandırmaq_\n📊 /top - _Oyunçuların xalları göstərir_\n_🌍 /g - Global xallar_\nℹ️ /help - _Sizə kömək edəcək_\n👤 /info - _İstifadəçi haqqında məlumat_\n🆔 /id - _Qrup məlumatı_`))
 })
 
 bot.command("info", async (ctx) => {
@@ -436,7 +436,7 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam,Mən Təxmin oyun botuyam, Vaxtınızı əyləncəli keçirmək üçün\nMəni qrupa əlavə et\n**Əsas əmrlərin siyahısı üçün /help*
+    ctx.replyWithMarkdown(`*Salam,Mən məxmin oyun botuyam, aamanınızı əyləncəli keçirmək üçün\nMəni qrupa əlavə et🤖\n**Əsas əmrlərin siyahısı üçün /help*
         `,{
         reply_markup:{
             inline_keyboard:[
@@ -465,7 +465,7 @@ bot.action('vip', ctx=>{
 // AZƏRBAYCAN GRUP DÜYMƏLƏRİ
 bot.action('AZ', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*🇦🇿 Gruplar*`,{
+    ctx.replyWithMarkdown(`*🇦🇿 Qruplar*`,{
         reply_markup:{
             inline_keyboard:[
                 [{text:'1) Qrup ', url:'t.me/Gencler_Mekani'}],
