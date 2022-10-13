@@ -243,7 +243,7 @@ const OyunHusnuEhedov = (ctx, chatId) => {
 				)
 			}
 			else {
-				ctx.reply("Küsdüm mənimlə oynamırsız😒 oyunu dayandırdım❕")
+				ctx.reply("Küsdüm mənimlə oynamırsız😒 oyunu dayandırdım ❕")
 				OyunDurdurHusnuEhedov(ctx, chatId)
 				return
 			}
