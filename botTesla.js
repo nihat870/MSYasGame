@@ -394,7 +394,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
-        *Salam! "Təxmin" oyunu üçün yaradırmış bir botam 🤖*\n🆘 *Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️ Qaydalar budur: Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️ Əvvəlcə botu qrupa əlavə edin və qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra Əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
+        *Salam! "Təxmin" oyunu üçün yaradırmış bir botam 🤖*\n🆘 *Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️ Qaydalar budur: Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️ Əvvəlcə botu qrupa əlavə edin və qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
           *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _Oyunu başlatmaq_\n⛔️ /stop - _Oyunu dayandırmaq_\n📊 /top - _Oyunçuların xalları göstərir_\n🌍 /g - _Qruplar üzrə xalları göstərir_\nℹ️ /help - _Sizə kömək edəcək_\n👤 /info - _İstifadəçi haqqında məlumatı göstərir_\n🆔 /id - _Qrup və istifadəçi ID nömrəsi göstərir_`))
 })
 
