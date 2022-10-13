@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳*
+    *Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün ➡️ /help*"}
 `)
 
@@ -289,7 +289,7 @@ bot.command("game", (ctx) => {
 		else {
 			dbChatAlHusnuEhedov(chatId)
 		}
-		ctx.replyWithHTML(`<b><a href="tg://user?id=${ctx.from.id}">${ctx.from.first_name}</a> tərəfindən yaş oyunu başladı 🎉</b>`)
+		ctx.replyWithHTML(`<b><a href="tg://user?id=${ctx.from.id}">${ctx.from.first_name}</a> tərəfindən yaş oyunu başladı 🥳</b>`)
 		OyunHusnuEhedov(ctx, chatId)
 	}
 	else {
@@ -394,8 +394,8 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
-        *Salam! "Təxmin" oyunu üçün\nyaradırmış bir botam🤖*\n🆘*Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️Qaydalar budur : Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️ Əvvəlcə botu qrupa əlavə edin və Qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra Əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
-          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _Oyunu başlat_\n⛔️ /stop - _Oyunu dayandırmaq_\n📊 /top - _Oyunçuların xalları göstərir_\n🌍 /g - _Global xallar_\nℹ️ /help - _Sizə kömək edəcək_\n👤 /info - _İstifadəçi haqqında məlumat_\n🆔 /id - _Qrup və istifadəçi ID göstərir_`))
+        *Salam! "Təxmin" oyunu üçün yaradırmış bir botam 🤖*\n🆘 *Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️ Qaydalar budur: Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️ Əvvəlcə botu qrupa əlavə edin və qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra Əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
+          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _Oyunu başlatmaq_\n⛔️ /stop - _Oyunu dayandırmaq_\n📊 /top - _Oyunçuların xalları göstərir_\n🌍 /g - _Qruplar üzrə xalları göstərir_\nℹ️ /help - _Sizə kömək edəcək_\n👤 /info - _İstifadəçi haqqında məlumatı göstərir_\n🆔 /id - _Qrup və istifadəçi ID nömrəsi göstərir_`))
 })
 
 bot.command("info", async (ctx) => {
@@ -427,8 +427,8 @@ bot.start(async (ctx) => {
     await ctx.replyWithMarkdown(ozelMesaj(ctx.update.message.chat.id < 0),{
         reply_markup:{
             inline_keyboard:[
-                [{text:'Botu qrupa əlavə edin ✅', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Digər Botlar 🤖', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'➕ Botu qrupa əlavə edin ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
+                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
             ]
         }
     })
@@ -436,12 +436,12 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
+    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
         `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'Botu qrupa əlavə edin ✅', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Digər Botlar 🤖', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'➕ Botu qrupa əlavə edin ➕', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
+                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
             ]
         }
     })
@@ -515,7 +515,7 @@ bot.on("message", async (ctx) => {
 			let answer = Number(message.text)
 			if (answer <= 0 || answer > 100) {
 				return ctx.reply(
-					"Cavab limiti (1 - 100)",
+					"❗ Cavab limiti (1 - 100)",
 					{
 						reply_to_message_id: ctx.message.message_id,
 					}
