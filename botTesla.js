@@ -436,7 +436,7 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
+    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
         `,{
         reply_markup:{
             inline_keyboard:[
