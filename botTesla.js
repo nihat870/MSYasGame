@@ -468,8 +468,8 @@ bot.action('AZ', ctx=>{
     ctx.replyWithMarkdown(`*🇦🇿 Qruplar*`,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup ', url:'t.me/Cenublar'}],
-                [{text:'2) Qrup ', url:'t.me/gecepayizi'}],
+                [{text:'1) 𒆜 𝐂𝐄𝐍𝐔𝐁 𝐙𝐎𝐍𝐀𝐒𝐈 𒆜', url:'t.me/Cenublar'}],
+                [{text:'2) 乂🖤ℙ𝕒𝕪ı𝕫 𝔾𝕖𝕔𝕖𝕤𝕚🖤乂', url:'t.me/gecepayizi'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
@@ -484,8 +484,8 @@ bot.action('TR', ctx=>{
        `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup', url:'t.me/Dark_Region'}],
-                [{text:'2) Qrup', url:'t.me/GG_teams'}],
+                [{text:'1) 𒆜 𝘿𝘼𝙍𝙆 𝙍𝙀𝙂𝙄𝙊𝙉 𒆜', url:'t.me/Dark_Region'}],
+                [{text:'2) ☬ 𝐆◉𝐥𝐝 𝐆𝐫𝐨𝐮𝐩 ☬', url:'t.me/GG_teams'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
