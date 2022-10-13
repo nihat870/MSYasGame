@@ -142,7 +142,7 @@ const OyunDurdurHusnuEhedov = (ctx, chatId) => {
 		db.update(chatId, ch => chat)
 		if (top.length > 0) {
 			ctx.replyWithMarkdown(Degisken(`
-				*🏆 Qaliblər Sıralaması:*
+				*🏆 Qaliblər:*
 
 				${top.sort((a, b) => b.score - a.score).map((member, index) => `${["🥇","🎖","🏅"][index] || "🔸"} ${index + 1}. *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan 🎁", "puan 🎁", "puan 🎁")}`).join("\n")}
 			`))
