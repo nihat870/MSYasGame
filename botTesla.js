@@ -395,7 +395,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
         *Salam! "Təxmin" oyunu üçün\nyaradırmış bir botam🤖*\n🆘*Bot yalnız qruplar üçün nəzərdə tutulub!*\n\n_ℹ️Qaydalar budur: Mən sizə şəkillər atıram və siz kateqoriyaya uyğun rəqəmlər təxmin etməlisiniz🕵🏼‍♂️ Əvvəlcə botu qrupa əlavə edin və Qrupda media icazəni aktiv edin! və ya botu admin edin_🗣\n_Sonra Əmrlər ilə oyuna başlaya bilərsiniz_🎯\n
-          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _oyunu başlat_\n⛔️ /stop - _oyunu dayandır_\n📊 /top - _bu qrup üzrə oyunçuların sıralamasın göstərir_\n🌍 /g - _qruplar üzrə oyunçuların sıralamasın göstərir_\nℹ️ /help - _sizə kömək edəcək_\n👤 /info - _istifadəçi haqqında məlumat_\n🆔 /id - _qrup və istifadəçi ID nömrəsin göstərir_`))
+          *Əsas əmrlərin siyahısı👇🏻*\n\n🎲 /game - _oyunu başlat_\n⛔️ /stop - _oyunu dayandır_\n📊 /top - _bu qrup üzrə oyunçuların sıralamasın göstərir_\n🌍 /g - qruplar üzrə oyunçuların sıralamasın göstərir_\nℹ️ /help - _sizə kömək edəcək_\n👤 /info - _istifadəçi haqqında məlumat_\n🆔 /id - _qrup və istifadəçi ID nömrəsin göstərir_`))
 })
 
 bot.command("info", async (ctx) => {
