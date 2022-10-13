@@ -144,7 +144,7 @@ const OyunDurdurHusnuEhedov = (ctx, chatId) => {
 			ctx.replyWithMarkdown(Degisken(`
 				*❗ Oyun bitdi 🥳*\n\n*🏆 Qaliblər:*
 
-				${top.sort((a, b) => b.score - a.score).map((member, index) => `${["🥇","🎖","🏅"][index] || "🔸"} ${index + 1}. *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan 🎁", "puan 🎁", "puan 🎁")}`).join("\n")}
+				${top.sort((a, b) => b.score - a.score).map((member, index) => `${["🥇","🎖","🏅"][index] || "🔸"} ${index + 1}. *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan", "puan", "puan")}`).join("\n")}
 				
 				
 				*/game əmri ilə oyunu yenidən başlatın ♻️*
@@ -339,7 +339,7 @@ bot.command("top", (ctx) => {
 				ctx.replyWithMarkdown(Degisken(`
 *🏆 Bu qrup üzrə ən yaxşı oyunçular*
 
-${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${["","",""][index] || ""} ${index + 1}) *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan🎁", "puan🎁", "puan🎁")}`).join("\n")}
+${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${["","",""][index] || ""} ${index + 1}) *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan", "puan", "puan")}`).join("\n")}
 				`))
 			}
 			else {
