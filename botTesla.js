@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et🤖*
+    *Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün ➡️ /help*"}
 `)
 
@@ -436,7 +436,7 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et🤖\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
+    ctx.replyWithMarkdown(`*Salam, Mən təxmin oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nMəni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
         `,{
         reply_markup:{
             inline_keyboard:[
