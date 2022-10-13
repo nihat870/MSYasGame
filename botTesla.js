@@ -337,7 +337,7 @@ bot.command("top", (ctx) => {
 			})
 			if (top.length > 0) {
 				ctx.replyWithMarkdown(Degisken(`
-*🏆 Bu qrup üzrə ən yaxşı oyunçular*
+*🔝 Bu qrupda ən yaxşı oyunçular*
 
 ${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${["","",""][index] || ""} ${index + 1}) *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "Xal", "Xal", "Xal")}`).join("\n")}
 				`))
