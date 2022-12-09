@@ -7,23 +7,23 @@
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": ""
+      "value": "5313510993:AAEVRSZY-CSLm5XBwngKSH-WL8doMbKNdgg"
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": ""
+      "value": "5313510993"
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "TeslaGameBot"
+      "value": "Rahid_Game_Bot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "3"
+      "value": "20"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
-      "value": "10000"
+      "value": "15000"
       }
   },
   "buildpacks": [
