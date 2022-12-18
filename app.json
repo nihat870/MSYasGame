@@ -7,23 +7,23 @@
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": "5313510993:AAEVRSZY-CSLm5XBwngKSH-WL8doMbKNdgg"
+      "value": ""
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": "5313510993"
+      "value": ""
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "Rahid_Game_Bot"
+      "value": ""
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "20"
+      "value": ""
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
-      "value": "15000"
+      "value": ""
       }
   },
   "buildpacks": [
