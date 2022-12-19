@@ -23,7 +23,7 @@
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
-      "value": ""
+      "value": "10000"
       }
   },
   "buildpacks": [
