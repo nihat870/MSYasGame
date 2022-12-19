@@ -15,11 +15,11 @@
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": ""
+      "value": "TeslaGameBot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": ""
+      "value": "3"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
@@ -30,10 +30,5 @@
     {
       "url": "heroku/nodejs"
     }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1
-    }
-  }
+  ]
 }
