@@ -76,7 +76,7 @@ const OyunYaratHusnuEhedov = chatId => {
 
 const ozelMesaj = isGroup => Degisken(`
     *Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳*
-    ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün ➡️ /help*"}
+    ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
 
@@ -430,8 +430,8 @@ bot.start(async (ctx) => {
     await ctx.replyWithMarkdown(ozelMesaj(ctx.update.message.chat.id < 0),{
         reply_markup:{
             inline_keyboard:[
-                [{text:'➕ Botu qrupa əlavə edin ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'➕ Qrupa Əlavə Et ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
+                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`}]
             ]
         }
     })
@@ -439,61 +439,17 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün ➡️ /help*
+    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün /help*
         `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'➕ Botu qrupa əlavə edin ➕', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'➕ Qrupa Əlavə Et ➕', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
+                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`}]
             ]
         }
     })
 })
 
-
-
-bot.action('vip', ctx=>{
-    ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*🇦🇿 Qruplar*`,{
-        reply_markup:{
-            inline_keyboard:[
-                [{text:'🇦🇿 Qruplar', callback_data:'AZ'}],
-                [{text:'🇦🇿 Digər Qruplar', callback_data:'TR'}],
-                [{text:'🔙 Geri', callback_data:'start'}]
-            ]
-        }
-    })
-})
-
-// AZƏRBAYCAN GRUP DÜYMƏLƏRİ
-bot.action('AZ', ctx=>{
-    ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*🇦🇿 Qruplar*`,{
-        reply_markup:{
-            inline_keyboard:[
-                [{text:'1) 𒆜 𝐂𝐄𝐍𝐔𝐁 𝐙𝐎𝐍𝐀𝐒𝐈 𒆜', url:'t.me/Cenublar'}],
-                [{text:'2) 乂🖤ℙ𝕒𝕪ı𝕫 𝔾𝕖𝕔𝕖𝕤𝕚🖤乂', url:'t.me/gecepayizi'}],
-                [{text:'🔙 Geri', callback_data:'vip'}]
-            ]
-        }
-    })
-})
-
-// TÜRK GRUP DÜYMƏLƏRİ
-bot.action('TR', ctx=>{
-    ctx.deleteMessage()
-    ctx.replyWithMarkdown(`
-*🇦🇿 Digər Qruplar*
-       `,{
-        reply_markup:{
-            inline_keyboard:[
-                [{text:'1) 𒆜 𝘿𝘼𝙍𝙆 𝙍𝙀𝙂𝙄𝙊𝙉 𒆜', url:'t.me/Dark_Region'}],
-                [{text:'2) ☬ 𝐆◉𝐥𝐝 𝐆𝐫𝐨𝐮𝐩 ☬', url:'t.me/GG_teams'}],
-                [{text:'🔙 Geri', callback_data:'vip'}]
-            ]
-        }
-    })
-})
 
 /// /// /// /// /// /// ///  <!-- BOT START MENÜ SON --> /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// 
 
