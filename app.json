@@ -11,19 +11,19 @@
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": ""
+      "value": "5592322265"
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "TeslaGameBot"
+      "value": "BOQgamebot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "3"
+      "value": "20"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
-      "value": "10000"
+      "value": "15000"
       }
   },
   "buildpacks": [
