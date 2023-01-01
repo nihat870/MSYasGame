@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳*
+    *Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et ✓*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
@@ -431,7 +431,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'➕ Qrupa Əlavə Et ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`}]
+                [{text:'🔮 Digər Botlar', url:`t.me/EdaletProject`}]
             ]
         }
     })
@@ -439,12 +439,12 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et 🥳\n\n**Əsas əmrlərin siyahısı üçün /help*
+    ctx.replyWithMarkdown(`*Salam, Mən təxmin yaş oyun botuyam, Vaxtınızı daha da əyləncəli keçirmək üçün\nməni qrupuna əlavə et ✓\n\n**Əsas əmrlərin siyahısı üçün /help*
         `,{
         reply_markup:{
             inline_keyboard:[
                 [{text:'➕ Qrupa Əlavə Et ➕', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🤖 Digər Botlar', url:`t.me/Rahid_44`}]
+                [{text:'🔮 Digər Botlar', url:`t.me/EdaletProject`}]
             ]
         }
     })
