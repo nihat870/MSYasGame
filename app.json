@@ -2,12 +2,12 @@
   "name": "Tesla Game V1 Versiyon",
   "description": "",
   "repository": "https://github.com/nihat870/MSYasGame",
-  "logo": "https://te.legra.ph/file/8592c0a32ed16aa501f43.jpg",
+  "logo": "https://avatars.githubusercontent.com/u/88708263?s=96&v=4",
   "keywords": ["telegram", "bot"],
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": "5633160420:AAGjh2BFa-ld0gSyLyhGtYB_fg_da43wim0"
+      "value": ""
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
