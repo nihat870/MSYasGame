@@ -7,7 +7,7 @@
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": ""
+      "value": "5633160420:AAGjh2BFa-ld0gSyLyhGtYB_fg_da43wim0"
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
