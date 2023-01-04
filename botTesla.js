@@ -431,7 +431,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'➕ Qrupa Əlavə Et ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🔮 Digər Botlar', url:`t.me/EdaletProject`}]
+                [{text:'🔮 Digər Botlar', url:`t.me/SM_NEZARET_BOT`}]
             ]
         }
     })
@@ -444,7 +444,8 @@ bot.action('start', ctx=>{
         reply_markup:{
             inline_keyboard:[
                 [{text:'➕ Qrupa Əlavə Et ➕', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'🔮 Digər Botlar', url:`t.me/EdaletProject`}]
+                [{text:'🔮 Digər Botlar', url:`t.me/
+                SM_NEZARET_BOT`}]
             ]
         }
     })
