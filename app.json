@@ -1,25 +1,25 @@
 {
   "name": "Tesla Game V1 Versiyon",
-  "description": " @TeslaGameBot'un Eski Alt Versiyon Projesi GitHub'da Kullanıcılara Açık Sunuldu.",
-  "repository": "https://github.com/sirincay/TeslaGamev1",
-  "logo": "https://avatars.githubusercontent.com/u/88708263?s=96&v=4",
+  "description": "",
+  "repository": "https://github.com/nihat870/MSYasGame",
+  "logo": "https://te.legra.ph/file/8592c0a32ed16aa501f43.jpg",
   "keywords": ["telegram", "bot"],
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": ""
+      "value": "5633160420:AAGjh2BFa-ld0gSyLyhGtYB_fg_da43wim0"
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": "5592322265"
+      "value": "5633160420"
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "BOQgamebot"
+      "value": "MS_gamebot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "20"
+      "value": "50"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
